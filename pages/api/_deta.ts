@@ -1,5 +1,5 @@
 import { Deta } from 'deta'
 
-const deta = Deta('c0u9ryvd_seXpJHELnFWuzxSbxvhnGhS2T1ZoP927')
+const deta = Deta(process.env.DETA_PROJECT_KEY)
 
 export const messageDB = deta.Base('message')
