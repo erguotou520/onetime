@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^13.0.5",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
+    "copy-to-clipboard": "^3.3.3",
+    "deta": "^1.1.0",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
     "next": "13.0.5",
