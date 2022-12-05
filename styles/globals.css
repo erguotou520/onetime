@@ -63,6 +63,11 @@ input.input:focus {
   border-color: rgb(0, 0, 0);
 }
 
+input.input[type=file] {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 button.btn {
   cursor: pointer;
   border: 1px solid #333;
