@@ -7,6 +7,7 @@ body {
   font-size: 16px;
   background: #202124;
   color: #e8e8e8;
+  padding: 0 0.5em;
 }
 
 a {
@@ -41,7 +42,8 @@ h1 {
 }
 
 .w-content {
-  width: 720px;
+  width: 100%;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -79,6 +81,16 @@ button.btn {
   background: #164ba1;
   color: #fff;
   font-family: var(--f-mono);
+}
+
+@media (max-width:640px) {
+  button.btn {
+    max-width: 112px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 button.show {
