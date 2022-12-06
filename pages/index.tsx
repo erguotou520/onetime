@@ -32,7 +32,7 @@ export default function Home() {
         method: 'post',
         body: fd,
       }).then((res) => res.json())
-      setUrl(`${window.location.origin}/view/${ret.key}`)
+      setUrl(`${window.location.origin}/file/${ret.key}`)
       setLoading(false)
     }
   }, [file, msg, tab])

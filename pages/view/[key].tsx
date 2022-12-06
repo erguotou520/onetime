@@ -1,9 +1,20 @@
+import { GetServerSidePropsContext } from 'next'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import CopyBtn from '../../components/CopyBtn'
 import { IconLoading } from '../../components/icons'
+import { messageDB } from '../api/_deta'
 
-export default function View() {
+export async function getServerSideProps(context: GetServerSidePropsContext) {
+  const msg = await messageDB.get(context.params!.key as string)
+  return {
+    props: {
+      type: msg?.type === 'msg' ? 'msg' : undefined,
+    },
+  }
+}
+
+export default function View({ type }: { type?: 'msg' }) {
   const router = useRouter()
   const [error, setError] = useState('')
   const [message, setMessage] = useState('')
@@ -26,7 +37,9 @@ export default function View() {
       <h1>One-time share</h1>
       <div className="notice">Note: The message can only show once!</div>
 
-      {loading ? (
+      {!type ? (
+        <pre>404</pre>
+      ) : loading ? (
         <IconLoading width="3em" height="3em" />
       ) : error ? (
         <pre>{error}</pre>

@@ -110,6 +110,10 @@ button.show {
   margin-left: 0.5rem;
 }
 
+.mr-1 {
+  margin-left: 0.25rem;
+}
+
 .f-default {
   font-family: initial;
 }
