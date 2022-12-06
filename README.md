@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# One-time share app
 
-## Getting Started
+Want to share message or file between devices with security? Like burn after reading? [Try this app online](https://onetime.erguotou.me/)!
 
-First, run the development server:
+You can deploy this app yourself using [Vercel](https://vercel.com/) and [Deta](https://deta.sh/). Thanks for them.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Open source, means you can control your data
+- Burn after reading, only once for security
+- All free
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Limit
+Limitted by Vercel and Deta if they have limits.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Deploy step
+1. Register [Vercel](https://vercel.com/) and [Deta](https://deta.sh/)
+2. Create a new project in Deta and Copy the [Project Keys](https://web.deta.sh/home/{username}/{projectName}/settings/)
+3. Import this repo to vercel, on the build setting page, provide an environment variable named `DETA_PROJECT_KEY` with the copied value above. Then click the deploy button!
+4. Bind custom domain in Vercel if you want.
