@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react'
+import { QRCodeSVG } from 'qrcode.react'
 import CopyBtn from '../components/CopyBtn'
 import { IconLoading } from '../components/icons'
 
@@ -32,7 +33,8 @@ export default function Home() {
         method: 'post',
         body: fd,
       }).then((res) => res.json())
-      setUrl(`${window.location.origin}/file/${ret.key}`)
+      const url = `${window.location.origin}/file/${ret.key}`
+      setUrl(url)
       setLoading(false)
     }
   }, [file, msg, tab])
@@ -51,7 +53,7 @@ export default function Home() {
           />
           <span>Message</span>
         </label>
-        <label className='ml-2'>
+        <label className="ml-2">
           <input
             name="tab"
             value="file"
@@ -86,6 +88,12 @@ export default function Home() {
             <div className="flex-2center mt-2">
               <input value={url} className="flex-1 input" readOnly />
               <CopyBtn content={url} className="ml-2" width="1.5em" height="1.5em" />
+            </div>
+            {/* {url && <canvas id="qrcode" className="h-32 mt-2 w-32 center" />} */}
+            <div className="bg-white mt-2 p-2 center" style={{
+              display: 'inline-block'
+            }}>
+              <QRCodeSVG value={url} width={128} height={128} />
             </div>
           </>
         ) : (

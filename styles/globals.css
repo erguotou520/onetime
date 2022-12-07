@@ -114,8 +114,16 @@ button.show {
   margin-left: 0.25rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .f-default {
   font-family: initial;
+}
+
+.bg-white {
+  background: #fff;
 }
 
 .copy-btn {
