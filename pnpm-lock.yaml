@@ -3,7 +3,6 @@ lockfileVersion: 5.4
 specifiers:
   '@next/font': ^13.0.5
   '@types/formidable': ^2.0.5
-  '@types/multiparty': ^0.0.33
   '@types/node': 18.11.9
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
@@ -13,7 +12,6 @@ specifiers:
   eslint-config-next: 13.0.5
   formidable: ^2.1.1
   next: 13.0.5
-  qr-creator: ^1.0.0
   qrcode.react: ^3.1.0
   react: 18.2.0
   react-dom: 18.2.0
@@ -30,7 +28,6 @@ dependencies:
   eslint-config-next: 13.0.5_hsf322ms6xhhd4b5ne6lb74y4a
   formidable: 2.1.1
   next: 13.0.5_biqbaboplfbrettd7655fr4n2y
-  qr-creator: 1.0.0
   qrcode.react: 3.1.0_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -38,7 +35,6 @@ dependencies:
 
 devDependencies:
   '@types/formidable': 2.0.5
-  '@types/multiparty': 0.0.33
 
 packages:
 
@@ -277,12 +273,6 @@ packages:
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: false
-
-  /@types/multiparty/0.0.33:
-    resolution: {integrity: sha512-Il6cJUpSqgojT7NxbVJUvXkCblm50/yEJYtblISDsNIeNYf4yMAhdizzidUk6h8pJ8yhwK/3Fkb+3Dwcgtwl8w==}
-    dependencies:
-      '@types/node': 18.11.9
-    dev: true
 
   /@types/node/18.11.9:
     resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
@@ -1734,10 +1724,6 @@ packages:
   /punycode/2.1.1:
     resolution: {integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==}
     engines: {node: '>=6'}
-    dev: false
-
-  /qr-creator/1.0.0:
-    resolution: {integrity: sha512-C0cqfbS1P5hfqN4NhsYsUXePlk9BO+a45bAQ3xLYjBL3bOIFzoVEjs79Fado9u9BPBD3buHi3+vY+C8tHh4qMQ==}
     dev: false
 
   /qrcode.react/3.1.0_react@18.2.0:
